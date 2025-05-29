@@ -1,0 +1,104 @@
+:root {
+  --background: hsl(222, 26%, 31%);
+  --bg-color-toggle: hsl(223, 31%, 20%);
+  --bg-color-toggle-in: hsl(6, 63%, 50%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--background);
+  color: white;
+}
+
+input,
+button {
+  outline: 0;
+  border: 0;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  width: 35rem;
+}
+
+/* Header App */
+
+.header-app {
+}
+.header-app__wraper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-app__title {
+}
+.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.theme__text {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+.theme__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 2.5rem;
+  position: relative;
+}
+.theme__btn-top {
+  width: 100%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -1.1rem;
+}
+.theme__btn-bottom {
+  width: 140%;
+  border-radius: 5rem;
+  height: 1.5rem;
+  background-color: var(--bg-color-toggle);
+  position: relative;
+  cursor: pointer;
+}
+.theme__btn-bottom::after {
+  content: "";
+  display: block;
+  height: 0.95rem;
+  width: 0.95rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--bg-color-toggle-in);
+  position: absolute;
+  top: 0.27rem;
+  left: 0.27rem;
+  /* left: 1.55rem; */
+  /* left: 2.97rem; */
+  transition: all 250ms ease-in 20ms;
+}
