@@ -36,6 +36,7 @@ body {
   font-family: "League Spartan", sans-serif;
   background-color: var(--background);
   color: white;
+  overflow: hidden;
 }
 
 input,
@@ -161,7 +162,6 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  overflow: hidden;
   padding: 0;
   cursor: pointer;
 }
